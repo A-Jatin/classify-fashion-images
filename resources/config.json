@@ -1,0 +1,16 @@
+{"actions": [
+  "test"
+],
+  "path": {"train": {"images": "train-images-idx3-ubyte.gz","labels": "train-labels-idx1-ubyte.gz"},
+            "test": {"images": "t10k-images-idx3-ubyte.gz","labels": "t10k-labels-idx1-ubyte.gz"}},
+  "use_augmentation": {"train": 1,
+                        "test": 0},
+  "model_path": "model.hdf5",
+  "num_epochs": 10,
+  "batch_size": 250,
+  "image_dimension": {"img_width": 28,"img_height": 28,"channels": 1},
+  "num_classes": 10,
+  "kafka_path": "/Users/jatin/downloads/kafka_2.13-3.1.0/",
+  "broker": "apache",
+  "predict_path": "predict"
+}

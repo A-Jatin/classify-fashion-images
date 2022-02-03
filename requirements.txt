@@ -1,0 +1,10 @@
+tensorflow
+sklearn
+confluent-kafka
+numpy
+pandas
+json
+unicodedata
+Pillow
+logging
+gzip
