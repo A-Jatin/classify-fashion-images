@@ -1,4 +1,5 @@
 from orchestration.apache.broker import ApacheMessageBroker
+from orchestration.gcp.broker import GcpMessageBroker
 
 
 class MessageBrokerFactory:
@@ -7,3 +8,6 @@ class MessageBrokerFactory:
 
         if broker == 'apache':
             return ApacheMessageBroker()
+        
+        if broker == 'gcp':
+            return GcpMessageBroker()
