@@ -8,3 +8,4 @@ unicodedata
 Pillow
 logging
 gzip
+google-cloud-pubsub
