@@ -12,7 +12,7 @@ class CNN:
         cnn = tf.keras.Sequential()
 
         cnn.add(tf.keras.layers.InputLayer(input_shape=(
-        config["image_dimension"]["img_height"], config["image_dimension"]["img_height"],
+        config["image_dimension"]["img_width"], config["image_dimension"]["img_height"],
         config["image_dimension"]["channels"])))
 
         # Normalization
