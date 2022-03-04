@@ -8,8 +8,8 @@ from run_image_classifier import run
 def server(broker):
     #os.system(kafka_path+"/bin/kafka-topics.sh --create --topic user --bootstrap-server localhost:9092")
     #os.system(kafka_path+"/bin/kafka-topics.sh --create --topic server --bootstrap-server localhost:9092")
-    broker = MessageBrokerFactory().build(broker, subscription_name = 'server;)
-    path = broker.consume(topic='user')
+    broker = MessageBrokerFactory().build(broker)
+    path = broker.consume(topic='user', subscription_name = 'server')
     labels = run(path)
     broker.produce(topic='server', data=labels)
 
